@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.gustavokring.dso2.appwebdso2.Appwebdso2ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.08 s - in com.gustavokring.dso2.appwebdso2.Appwebdso2ApplicationTests
