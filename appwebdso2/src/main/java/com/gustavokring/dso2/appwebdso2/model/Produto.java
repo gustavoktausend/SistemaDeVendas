@@ -32,6 +32,7 @@ public class Produto {
     private Long id;
 
     private String nome;
+    private String categoria;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String descricao;
     private Long quantidade;
