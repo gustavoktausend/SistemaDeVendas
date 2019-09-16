@@ -38,6 +38,7 @@ public class Produto {
     private Long quantidade;
     private Double valor;
     private LocalDate dataCriacao;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private LocalDateTime ultimaAtualizacao;
 
 

@@ -64,6 +64,20 @@ public class ProdutoService {
 
     public void deleteById(Long id) { repository.deleteById(id);}
 
+    public Mono<Void> retiraProduto(Long id ,Long quantidade){
+        return Mono.fromCallable(
+                () -> repository.findById(id).orElseThrow(Exception::new)
+        ).flatMap(produto ->
+                Mono.fromCallable(
+                        () ->
+                        repository.save(
+                            produto.withId(id)
+                                .withQuantidade(produto.getQuantidade() >= quantidade ? produto.getQuantidade() - quantidade : produto.getQuantidade())
+                    )
+                )
+            ).then();
+    }
+
 
 
 }

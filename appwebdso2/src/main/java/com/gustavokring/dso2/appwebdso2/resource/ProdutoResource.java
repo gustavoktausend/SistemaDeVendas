@@ -21,13 +21,13 @@ public class ProdutoResource {
         return produtoService.getProdutoById(id);
     }
 
-    @GetMapping("/{categoria}")
+    @GetMapping("/categoria/{categoria}")
     public Mono<List<Produto>> getAllByCategoria(@PathVariable String categoria) {
         return Mono.empty();
     }
 
     @PutMapping("/{id}")
-    public Mono<Produto> put(@PathVariable Long id,
+    public Mono<Produto> editProduto(@PathVariable Long id,
                              @RequestParam(required = false) String nome,
                              @RequestParam(required = false) String categoria,
                              @RequestParam(required = false) String descricao,
@@ -38,7 +38,7 @@ public class ProdutoResource {
     }
 
     @PostMapping
-    public Mono<Void> post(@RequestParam String nome,
+    public Mono<Void> newProduto(@RequestParam String nome,
                             @RequestParam String categoria,
                             @RequestParam String descricao,
                             @RequestParam Long quantidade,
@@ -52,6 +52,9 @@ public class ProdutoResource {
         produtoService.deleteById(id);
     }
 
-
+    @PutMapping("/retirar/{id}")
+    public Mono<Void> retiraProduto(@PathVariable Long id) {
+        return Mono.empty();
+    }
 
 }

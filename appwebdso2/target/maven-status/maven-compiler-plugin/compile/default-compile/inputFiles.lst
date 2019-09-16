@@ -1,2 +1,8 @@
-/home/gustavo/Documentos/Workspaces/gustavoKring/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/Appwebdso2Application.java
-/home/gustavo/Documentos/Workspaces/gustavoKring/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/model/Produto.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/service/UsuarioService.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/service/ProdutoService.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/Appwebdso2Application.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/repository/ProdutoRepository.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/model/Produto.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/repository/UsuarioRepository.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/resource/ProdutoResource.java
+/home/gustavo/Documents/Workplace/WorkspaceUfsc/SistemaDeVendas/appwebdso2/src/main/java/com/gustavokring/dso2/appwebdso2/model/Usuario.java

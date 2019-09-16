@@ -1,2 +1,12 @@
-com/gustavokring/dso2/appwebdso2/model/Produto.class
+com/gustavokring/dso2/appwebdso2/resource/ProdutoResource.class
+com/gustavokring/dso2/appwebdso2/model/Produto$Builder.class
+com/gustavokring/dso2/appwebdso2/service/UsuarioService.class
+com/gustavokring/dso2/appwebdso2/repository/ProdutoRepository.class
+com/gustavokring/dso2/appwebdso2/model/Produto$ProdutoBuilder.class
+com/gustavokring/dso2/appwebdso2/model/Usuario.class
 com/gustavokring/dso2/appwebdso2/Appwebdso2Application.class
+com/gustavokring/dso2/appwebdso2/model/Usuario$Builder.class
+com/gustavokring/dso2/appwebdso2/model/Usuario$UsuarioBuilder.class
+com/gustavokring/dso2/appwebdso2/service/ProdutoService.class
+com/gustavokring/dso2/appwebdso2/model/Produto.class
+com/gustavokring/dso2/appwebdso2/repository/UsuarioRepository.class

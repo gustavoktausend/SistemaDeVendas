@@ -30,6 +30,7 @@ public class UsuarioService {
                             .senha(senha)
                             .telefone(telefone)
                             .dataCriacao(LocalDate.now())
+                            .documentId(documentId)
                             .build()
                 )
         ).then();
