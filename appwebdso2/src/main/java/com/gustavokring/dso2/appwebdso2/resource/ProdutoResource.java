@@ -23,7 +23,7 @@ public class ProdutoResource {
 
     @GetMapping("/categoria/{categoria}")
     public Mono<List<Produto>> getAllByCategoria(@PathVariable String categoria) {
-        return Mono.empty();
+        return produtoService.getProdutoByCategoria(categoria);
     }
 
     @PutMapping("/{id}")

@@ -4,6 +4,7 @@ import com.gustavokring.dso2.appwebdso2.model.Produto;
 import com.gustavokring.dso2.appwebdso2.repository.ProdutoRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.format.datetime.joda.LocalDateTimeParser;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -25,7 +26,9 @@ public class ProdutoService {
     }
 
     public Mono<List<Produto>> getProdutoByCategoria(String categoria) {
-        return Mono.empty();
+
+        return Mono.fromCallable(() -> repository.findAllByCategoria(categoria, PageRequest.of(0,10)));
+
     }
 
     public Mono<Void> insertNew(String nome,String categoria, String descricao, Long quantidade, Double valor) {
