@@ -58,9 +58,7 @@ public class ProdutoService {
                                             .withDescricao(StringUtils.isBlank(descricao) ? produto.getDescricao() : descricao)
                                             .withQuantidade(quantidade == null ? produto.getQuantidade() : quantidade)
                                             .withValor(valor == null ? produto.getValor() : valor)
-                                            .withUltimaAtualizacao(
-                                                    LocalDateTime.parse(LocalDateTime.now().toString(),
-                                                            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")))
+                                            .withUltimaAtualizacao(LocalDateTime.now())
                                     )
                                 );
     }
